@@ -8,7 +8,7 @@ node('DOTNETCORE') {
         echo 'Building....'
         sh 'dotnet build ConsoleApp1'
         echo 'Building New Feature'
-        releasenotes(changes:"false")
+        releasenotes(changes:"true")
         }catch(ex){
             echo 'Error: something is wrong'
             echo ex.toString();
