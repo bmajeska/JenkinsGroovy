@@ -1,4 +1,4 @@
-node {
+node('DOTNETCORE') {
     stage('SCM') {
     	echo 'Gathering code from version control'
         git branch: '${branch}', url: 'https://github.com/bmajeska/JenkinsGroovy.git'
